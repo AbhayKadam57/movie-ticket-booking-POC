@@ -1,0 +1,100 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 50%;
+  background-color: #f7e8f7;
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.selectbox {
+  position: relative;
+  color: rgb(182, 11, 225);
+  .box {
+    border: 2px solid rgb(182, 11, 225);
+    border-radius: 20px;
+    min-width: 100px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .options {
+    position: absolute;
+    border: 2px solid rgb(182, 11, 225);
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    top: 120%;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #f5f5f5;
+    .option {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.options.active {
+  display: flex;
+}
+
+.movie_screen {
+  width: 80%;
+  height: 50px;
+  margin: 50px auto;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 50px solid #8d6e9d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.seat_arrangement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.seat {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #8d6e9d;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8d6e9d;
+  cursor: pointer;
+}
+
+.booked {
+  background-color: #8d6e9d;
+}
+
+.selected {
+  background-color: #00c9b5;
+}
